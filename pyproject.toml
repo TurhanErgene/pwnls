@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pwnls"
+version = "0.1.0"
+description = "ls -la with icons, a tree view, and a warning for risky files"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+[project.scripts]
+pwnls = "pwnls:main"
+
+[tool.setuptools]
+py-modules = ["pwnls"]
